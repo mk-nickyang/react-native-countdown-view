@@ -1,12 +1,18 @@
 import * as React from 'react';
 
 import { StyleSheet, View } from 'react-native';
-import { CountdownViewView } from 'react-native-countdown-view';
+import { CountdownView } from 'react-native-countdown-view';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <CountdownViewView color="#32a852" style={styles.box} />
+      <CountdownView
+        countdownTime={10}
+        style={{
+          width: 200,
+          height: 200,
+        }}
+      />
     </View>
   );
 }

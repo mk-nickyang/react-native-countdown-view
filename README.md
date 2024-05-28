@@ -11,11 +11,11 @@ npm install react-native-countdown-view
 ## Usage
 
 ```js
-import { CountdownViewView } from "react-native-countdown-view";
+import { CountdownViewView } from 'react-native-countdown-view';
 
 // ...
 
-<CountdownViewView color="tomato" />
+<CountdownViewView countdownTime={10} />;
 ```
 
 ## Contributing

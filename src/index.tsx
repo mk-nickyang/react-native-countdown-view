@@ -12,13 +12,13 @@ const LINKING_ERROR =
   '- You are not using Expo Go\n';
 
 type CountdownViewProps = {
-  color: string;
-  style: ViewStyle;
+  countdownTime: number;
+  style?: ViewStyle;
 };
 
-const ComponentName = 'CountdownViewView';
+const ComponentName = 'CountdownView';
 
-export const CountdownViewView =
+export const CountdownView =
   UIManager.getViewManagerConfig(ComponentName) != null
     ? requireNativeComponent<CountdownViewProps>(ComponentName)
     : () => {
